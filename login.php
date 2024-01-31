@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Halaman Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
-    <form action="validasi.php" method="POST">
+    <div class="login-container">
+        <img src="https://lh3.googleusercontent.com/a/ACg8ocK5SABVJdMJU0aYKPehcKnxK51tOYeKeUT8U4vJlWLLUQ=s288-c-no" alt="Logo" class="logo">
         <h1>Selamat Datang!</h1>
-        <table>
-            <tr>
-                <td>Username</td>
-                <td><input type="text" name="username"></td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td><input type="password" name="password"></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <button type="submit">LOGIN</button>
-                    <button type="reset">CLEAR</button>
-                </td>
-            </tr>
-        </table>
-    </form>
+        <form action="validasi.php" method="POST">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="button-group">
+                <button type="submit" class="login-btn">LOGIN</button>
+                <button type="reset">CLEAR</button>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>

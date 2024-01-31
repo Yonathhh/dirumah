@@ -1,0 +1,66 @@
+body {
+    background-color: #e0e0e0; /* Light gray background */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background-color: #fff; /* White box background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px; /* Rounded corners for buttons */
+}
+
+button.login-btn {
+    background-color: #007bff; /* Blue background for login button */
+    color: #fff; /* White text for login button */
+}
+
+button:hover {
+    background-color: #ddd; /* Light gray on hover */
+}
