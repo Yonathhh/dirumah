@@ -16,7 +16,7 @@ if (!array_key_exists("username", $_SESSION)) {
     <link rel="stylesheet" href="menu.css">
 </head>
 
-<body>
+<body onload="showWelcomeMessage()">
     <nav>
         <ul>
             <li><a href="home.php">HOME</a></li>
@@ -43,6 +43,13 @@ if (!array_key_exists("username", $_SESSION)) {
             </li>
         </ul>
     </nav>
+
+    <script>
+        function showWelcomeMessage() {
+            alert("Selamat datang, <?= $_SESSION['username'] ?>!");
+        }
+    </script>
+    
 </body>
 
 </html>
