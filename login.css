@@ -1,5 +1,5 @@
 body {
-    background-color: #e0e0e0; 
+    background-color: #e0e0e0;
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -59,8 +59,18 @@ button {
 button.login-btn {
     background-color: #007bff; /* Blue background for login button */
     color: #fff; /* White text for login button */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
 }
 
-button:hover {
-    background-color: #ddd; /* Light gray on hover */
+button.login-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+button[type="reset"] {
+    background-color: #ff0000; /* Red background for clear button */
+    color: #fff; /* White text for clear button */
+}
+
+button[type="reset"]:hover {
+    background-color: #cc0000; /* Darker red on hover */
 }

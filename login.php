@@ -8,7 +8,7 @@
 
 <body>
     <div class="login-container">
-        <img src="https://lh3.googleusercontent.com/a/ACg8ocK5SABVJdMJU0aYKPehcKnxK51tOYeKeUT8U4vJlWLLUQ=s288-c-no" alt="Logo" class="logo">
+        <img src="images/unnamed.jpg" alt="Logo" class="logo">
         <h1>Selamat Datang!</h1>
         <form action="validasi.php" method="POST">
             <div class="input-group">
