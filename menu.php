@@ -43,12 +43,6 @@ if (!array_key_exists("username", $_SESSION)) {
             </li>
         </ul>
     </nav>
-
-    <script>
-        function showWelcomeMessage() {
-            alert("Selamat datang, <?= $_SESSION['username'] ?>!");
-        }
-    </script>
     
 </body>
 
