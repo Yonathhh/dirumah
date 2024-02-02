@@ -26,6 +26,9 @@ if (!array_key_exists("username", $_SESSION)) {
                         <li><a href="user.php">User</a></li>
                     <?php endif ?>
                     <li><a href="barang.php">Barang</a></li>
+                    <?php if ($_SESSION["level"] == "admin" || $_SESSION["level"] == "keuangan") : ?>
+                        <li><a href="pelanggan.php">Pelanggan</a></li>
+                    <?php endif ?>
                 </ul>
             </li>
             <li>TRANSAKSI
@@ -43,7 +46,7 @@ if (!array_key_exists("username", $_SESSION)) {
             </li>
         </ul>
     </nav>
-    
+
 </body>
 
 </html>
