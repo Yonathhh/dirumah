@@ -20,22 +20,24 @@ if (!array_key_exists("username", $_SESSION)) {
     <nav>
         <ul>
             <li><a href="home.php">HOME</a></li>
-            <li>MASTER
-                <ul>
+            <li class="dropdown"> <!-- Tambahkan class "dropdown" pada li -->
+                <a href="#" class="dropbtn">MASTER</a>
+                <div class="dropdown-content">
                     <?php if ($_SESSION["level"] == "admin") : ?>
-                        <li><a href="user.php">User</a></li>
+                        <a href="user.php">User</a>
                     <?php endif ?>
-                    <li><a href="barang.php">Barang</a></li>
+                    <a href="barang.php">Barang</a>
                     <?php if ($_SESSION["level"] == "admin" || $_SESSION["level"] == "keuangan") : ?>
-                        <li><a href="pelanggan.php">Pelanggan</a></li>
+                        <a href="pelanggan.php">Pelanggan</a>
                     <?php endif ?>
-                </ul>
+                </div>
             </li>
-            <li>TRANSAKSI
-                <ul>
-                    <li><a href="penjualan.php">Penjualan</a></li>
-                    <li><a href="pembelian.php">Pembelian</a></li>
-                </ul>
+            <li class="dropdown"> <!-- Tambahkan class "dropdown" pada li -->
+                <a href="#" class="dropbtn">TRANSAKSI</a>
+                <div class="dropdown-content">
+                    <a href="penjualan.php">Penjualan</a>
+                    <a href="pembelian.php">Pembelian</a>
+                </div>
             </li>
             <li class="user-profile">
                 Selamat datang, <?= $_SESSION["username"] ?>!
