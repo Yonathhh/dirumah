@@ -32,12 +32,13 @@ li a:hover {
 
 .user-profile {
   float: right;
+  color: whitesmoke;
 }
 
 .user-profile ul {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #b4b2b2;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -68,7 +69,7 @@ li a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #b4b2b2;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
