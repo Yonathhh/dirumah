@@ -4,6 +4,9 @@
 <head>
     <title>User</title>
     <link rel="stylesheet" href="css/user.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -35,7 +38,7 @@
     ?>
 
     <div class="container">
-        <h1>Data User</h1>
+        <h1 data-aos="zoom-in-up">Data User</h1>
         <div class="data-box">
             <!-- Tombol Tambah diletakkan di luar card-container -->
             <form action="new-user.php" method="GET">
@@ -84,6 +87,12 @@
             id = formData.get("id");
             return confirm(`Hapus user '${id}'?`);
         }
+    </script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
